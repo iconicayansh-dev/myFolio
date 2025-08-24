@@ -18,4 +18,4 @@ app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
-});
+})
