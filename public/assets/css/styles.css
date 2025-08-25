@@ -182,6 +182,7 @@ body.light-theme{
 
 .main {
   overflow: hidden;
+  height: 100vh
 }
 
 .section {
