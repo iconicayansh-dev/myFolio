@@ -94,6 +94,26 @@ img {
   height: auto;
 }
 
+.popup {
+  position: fixed;
+  top: 20px;
+  right: -300px; 
+  background: #1e1e1e;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: right 0.5s ease-in-out, opacity 0.3s;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.popup.show {
+  right: 20px;
+  opacity: 1;
+}
+
+
 .change-theme{
   font-size: 1.25rem;
   cursor: pointer;
