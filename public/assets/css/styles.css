@@ -182,7 +182,6 @@ body.light-theme{
 
 .main {
   overflow: hidden;
-  height: 100vh
 }
 
 .section {
@@ -1176,6 +1175,7 @@ body.light-theme{
 
   .contact__container{
     column-gap: 6rem;
+    height: 80px
   }
 
   .footer__social-link{
