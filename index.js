@@ -39,60 +39,6 @@ app.get("/", (req, res) => {
 res.render('index')
 })
 
-app.get("/projects", (req, res) => {
-let repoInfo;
-axios({
-method: "get",
-url: `https://api.github.com/users/${config.githubUsername}/repos`,
-headers: {
-Authorization: `Bearer ${config.githubToken}`,
-"Content-Type": "application/json",
-"Accept": "application/vnd.github.mercy-preview+json" // MUST ADD TO INCLUDE TOPICS
-}
-}).then(response => {
-repoInfo = response.data;
-res.render('projects', {
-repoInfo: repoInfo
-});
-})
-.catch(err => {
-console.log(err);
-});
-});
-
-const form = document.querySelector('.contact__form');
-const notifications = document.getElementById('notifications');
-
-form.addEventListener('submit', async function (e) {
-  e.preventDefault(); // stop page reload
-
-  const formData = new FormData(form);
-  const response = await fetch(form.action, {
-    method: 'POST',
-    body: formData,
-  });
-
-  if (response.ok) {
-    showNotification("✅ Message sent successfully!", "success");
-    form.reset();
-  } else {
-    showNotification("❌ Something went wrong. Please try again!", "error");
-  }
-});
-
-function showNotification(message, type) {
-  const notif = document.createElement('div');
-  notif.className = `notification ${type}`;
-  notif.textContent = message;
-
-  notifications.appendChild(notif);
-
-  // Remove after animation ends (3.4s total)
-  setTimeout(() => {
-    notif.remove();
-  }, 3400);
-}
-
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
 })
