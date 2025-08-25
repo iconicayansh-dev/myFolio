@@ -786,7 +786,7 @@ body.light-theme{
 
 .contact__container{
   row-gap: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 
 .contact__title{
@@ -1175,7 +1175,6 @@ body.light-theme{
 
   .contact__container{
     column-gap: 6rem;
-    height: 80px
   }
 
   .footer__social-link{
