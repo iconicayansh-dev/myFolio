@@ -178,7 +178,7 @@ main.main
 
 .contact__content
   h3.contact__title Write me your thoughts
-  form.contact__form(id='contactForm')
+  form.contact__form(action='https://formspree.io/f/xldwrkdy' method='POST')
     .contact__form-div
       label.contact__form-tag(for='name') Name
       input.contact__form-input(type='text' name='name' placeholder='Your name or Discord username' required)
@@ -201,7 +201,6 @@ footer.footer
       a(href="https://discord.com/users/1004291040150298715" target="_blank")
         | Iconic Ayansh
 
-script(src='assets/js/form.js')
 script(src='assets/js/scrollreveal.min.js')
 script(src='assets/js/swiper-bundle.min.js')
 script(src='assets/js/mixitup.min.js')
