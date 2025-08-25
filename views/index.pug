@@ -2,23 +2,16 @@ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  // =============== FAVICON ===============
-  link(rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon_io/apple-touch-icon.png')
-  link(rel='icon' type='image/png' sizes='32x32' href='assets/img/favicon_io/favicon-32x32.png')
-  link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon_io/favicon-16x16.png')
-  link(rel='manifest' href='assets/img/favicon_io/site.webmanifest')
 
-  // =============== BOXICONS ===============
+  link(rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon_io/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='assets/img/mainAvatar.png')
+  link(rel='manifest' href='assets/img/favicon_io/site.webmanifest')
   link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet')
-  // =============== SWIPER CSS ===============
   link(rel='stylesheet' href='assets/css/swiper-bundle.min.css')
-  // =============== CSS ===============
   link(rel='stylesheet' href='assets/css/styles.css')
   script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
-
   title  Iconic Ayansh | Portfolio
-  link(rel='icon', type='image/png', href='assets/img/mainAvatar.png')
-// =============== HEADER ===============
+
 header#header.header.transHead
   nav.nav.container
     a.nav__logo(href='https://discord.com/users/1004291040150298715') Ayansh
@@ -39,7 +32,7 @@ header#header.header.transHead
         li.nav__item
           a.nav__link(onclick="goTo('contact'); return false;" href='#contact')
             i.bx.bx-message-square
-    // Theme change button
+
     i#theme-button.bx.bx-moon.change-theme
 i.bx.bx-moon.change-theme
 a.nav__logo2(href='#') Ayansh
@@ -70,7 +63,7 @@ main.main
   section#about.about.section
     h2.section__title About Me
     .about__container.container.grid
-      img.about__img(src='assets/img/about.jpg' alt='')
+      img.about__img(src='assets/img/mainAvatar.png' alt='')
       .about__data
         .about__info
           .about__box
@@ -186,7 +179,7 @@ main.main
       
 .contact__content
         h3.contact__title Write me your thoughts
-        form.contact__form(action='https://formsubmit.co/f/iconicayansh@gmail.com' method='POST')
+        form.contact__form(action='https://formsubmit.co/iconicayansh@gmail.com' method='POST')
   .contact__form-div
     label.contact__form-tag(for='name') Name
     input.contact__form-input(type='text' name='name' placeholder='Your name or discord username' required)
@@ -211,4 +204,3 @@ script(src='assets/js/scrollreveal.min.js')
 script(src='assets/js/swiper-bundle.min.js')
 script(src='assets/js/mixitup.min.js')
 script(src='assets/js/main.js')
-script(src='assets/js/form.js')
