@@ -3,9 +3,7 @@ const path = require('path');
 const cors = require("cors");
 const bodyParser = require('body-parser');
 const axios = require('axios');
-const config = require('./config');
 const { json } = require('body-parser');
-
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -18,24 +16,6 @@ app.use(cors());
 app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 app.get("/", (req, res) => {
-// let repoInfo;
-// axios({
-//     method: "get",
-//     url: `https://api.github.com/users/${config.githubUsername}/repos`,
-//     headers: {
-//         Authorization: `Bearer ${config.githubToken}`,
-//         "Content-Type": "application/json",
-//         "Accept": "application/vnd.github.mercy-preview+json" // MUST ADD TO INCLUDE TOPICS
-//     }
-// }).then(response => {
-//    repoInfo = response.data;
-//    res.render('index', {
-//     repoInfo: repoInfo
-// });
-// }
-// .catch(err => {
-//     console.log(err);
-// });
 res.render('index')
 })
 
