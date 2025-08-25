@@ -175,21 +175,20 @@ main.main
             a.contact__button(href='https://discord.com/users/1004291040150298715/' target='_blank')
               | write me 
               i.bx.bx-right-arrow-alt.contact__button-icon
-      
-.contact__content
-        h3.contact__title Write me your thoughts
-        form.contact__form
-  .contact__form-div
-    label.contact__form-tag(for='name') Name
-    input.contact__form-input(type='text' name='name' placeholder='Your name or discord username' required)
-  .contact__form-div
-    label.contact__form-tag(for='email') Mail
-    input.contact__form-input(type='email' name='email' placeholder='Your email' required)
-  .contact__form-div.contact__form-area
-    label.contact__form-tag(for='message') Message
-    textarea.contact__form-input(name='message' cols='30' rows='10' placeholder='Your message' required)
-  button.button Send Message
 
+.contact__content
+  h3.contact__title Write me your thoughts
+  form.contact__form
+    .contact__form-div
+      label.contact__form-tag(for='name') Name
+      input.contact__form-input(type='text' name='name' placeholder='Your name or discord username' required)
+    .contact__form-div
+      label.contact__form-tag(for='email') Mail
+      input.contact__form-input(type='email' name='email' placeholder='Your email' required)
+    .contact__form-div.contact__form-area
+      label.contact__form-tag(for='message') Message
+      textarea.contact__form-input(name='message' cols='30' rows='10' placeholder='Your message' required)
+    button.button Send Message
 
 footer.footer
     h2.footer__love
