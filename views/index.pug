@@ -178,7 +178,7 @@ main.main
 
 .contact__content
   h3.contact__title Write me your thoughts
-  form.contact__form(action='https://formsubmit.co/iconicayansh@gmail.com' method='POST')
+  form.contact__form(id='contactForm')
     .contact__form-div
       label.contact__form-tag(for='name') Name
       input.contact__form-input(type='text' name='name' placeholder='Your name or Discord username' required)
@@ -190,6 +190,9 @@ main.main
       textarea.contact__form-input(name='message' placeholder='Your message' required)
     button.button(type='submit') Send Message
 
+  .popup#popup
+    p#popupMessage
+
 footer.footer
     h2.footer__love
       | Made with 
@@ -197,6 +200,43 @@ footer.footer
       | by 
       a(href="https://discord.com/users/1004291040150298715" target="_blank")
         | Iconic Ayansh
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  try {
+    let res = await fetch("https://formsubmit.co/ajax/iconicayansh@gmail.com", {
+      method: "POST",
+      body: formData
+    });
+
+    if (res.ok) {
+      showPopup("✅ Your message was sent successfully!");
+      form.reset();
+    } else {
+      showPopup("❌ Failed to send message. Try again.");
+    }
+  } catch (err) {
+    showPopup("⚠️ Error: " + err.message);
+  }
+});
+
+function showPopup(message) {
+  const popup = document.getElementById("popup");
+  const popupMessage = document.getElementById("popupMessage");
+
+  popupMessage.textContent = message;
+  popup.classList.add("show");
+
+  setTimeout(() => {
+    popup.classList.remove("show");
+  }, 4000); // hides after 4s
+}
+</script>
 
 script(src='assets/js/scrollreveal.min.js')
 script(src='assets/js/swiper-bundle.min.js')
