@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="assets/img/mainAvatar.png" />
+  <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>Iconic Ayansh | Portfolio</title>
+</head>
+<body>
+  <header id="header" class="header transHead">
+    <nav class="nav container">
+      <a href="https://ayansh.xyz/" class="nav__logo">Ayansh</a>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a onclick="goTo('home'); return false;" href="#home" class="nav__link active-link">
+              <i class="bx bx-home-alt"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a onclick="goTo('about'); return false;" href="#about" class="nav__link">
+              <i class="bx bx-user"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a onclick="goTo('skills'); return false;" href="#skills" class="nav__link">
+              <i class="bx bx-trophy"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a onclick="goTo('work'); return false;" href="#work" class="nav__link">
+              <i class="bx bx-briefcase-alt"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a onclick="goTo('contact'); return false;" href="#contact" class="nav__link">
+              <i class="bx bx-message-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <i id="theme-button" class="bx bx-moon change-theme"></i>
+    </nav>
+  </header>
+
+  <i class="bx bx-moon change-theme"></i>
+  <a href="#" class="nav__logo2">Ayansh</a>
+
+  <main class="main">
+    <section id="home" class="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__greeting">Hello, I&apos;m</span>
+          <h1 class="home__name">Iconic Ayansh</h1>
+          <h3 class="home__education">Gamer / Developer</h3>
+          <div class="home__buttons">
+            <a onclick="goTo('about');" class="button">About me</a>
+          </div>
+        </div>
+        <div class="home__handle">
+          <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_0bptkpmg.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+        <div class="home__social">
+          <a href="https://youtube.com/@iconicayansh" target="_blank" class="home__social-link">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/iconic_ayansh" target="_blank" class="home__social-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://discord.com/users/1004291040150298715" target="_blank" class="home__social-link">
+            <i class="bx bxl-discord-alt"></i>
+          </a>
+        </div>
+        <a onclick="goTo('about');" class="home__scroll">
+          <i class="bx bx-mouse home__scroll-icon"></i>
+          <span class="home__scroll-name">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__container container grid">
+        <img src="assets/img/banner.png" alt="" class="about__img" />
+        <div class="about__data">
+          <div class="about__info">
+            <div class="about__box">
+              <i class="bx bx-award about__icon"></i>
+              <h3 class="about__title">Experience</h3>
+              <span class="about__subtitle">2+ Years</span>
+            </div>
+            <div class="about__box">
+              <i class="bx bx-briefcase-alt about__icon"></i>
+              <h3 class="about__title">Completed</h3>
+              <span class="about__subtitle">5+ Projects</span>
+            </div>
+            <div class="about__box">
+              <i class="bx bx-briefcase about__icon"></i>
+              <h3 class="about__title">Satisfied</h3>
+              <span class="about__subtitle">7+ Clients</span>
+            </div>
+          </div>
+          <p class="about__description">
+            Haiya! I'm Ayansh, a young boy who likes to play games and coding stuff :D
+          </p>
+          <a onclick="goTo('contact');" class="button">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <h2 class="section__title">My Projects</h2>
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Working on</h3>
+          <div class="skills__box">
+            <div class="skills__groups">
+              <div class="skills__data">
+                <i class="bx bxl-youtube"></i>
+                <div>
+                  <h3 class="skills__name">Youtube Channel</h3>
+                  <span class="skills__level">750+ subscribers</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-instagram"></i>
+                <div>
+                  <h3 class="skills__name">Instagram Page</h3>
+                  <span class="skills__level">120+ followers</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <i class="bx bxl-discord-alt"></i>
+                <div>
+                  <h3 class="skills__name">Discord Server</h3>
+                  <span class="skills__level">4,100+ members</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="work" class="work section">
+      <h2 class="section__title">Recent Works</h2>
+      <div class="work__filters"></div>
+      <div class="work__container container grid">
+        <div class="work__card mix web">
+          <img src="assets/img/youtubePreview.png" alt="" class="work__img" />
+          <h3 class="work__title">Youtube Channel</h3>
+          <p class="work__subtitle">[Discontinued] Iconic Ayansh</p>
+          <div class="wbtn">
+            <a href="https://youtube.com/@iconicayansh" class="button">Check Out</a>
+          </div>
+        </div>
+        <div class="work__card mix web">
+          <img src="assets/img/instaPreview.png" alt="" class="work__img" />
+          <h3 class="work__title">Instagram Page</h3>
+          <p class="work__subtitle">[Discontinued] Iconic Ayansh</p>
+          <div class="wbtn">
+            <a href="https://instagram.com/iconic_ayansh/" class="button">Check Out</a>
+          </div>
+        </div>
+        <div class="work__card mix web">
+          <img src="assets/img/discordPreview.png" alt="" class="work__img" />
+          <h3 class="work__title">Discord Server</h3>
+          <p class="work__subtitle">Guild Zone</p>
+          <div class="wbtn">
+            <a href="https://discord.gg/EdDwqjfP57/" class="button">Check Out</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial" class="testimonial section">
+      <span class="section__subtitle">My clients say</span>
+      <h2 class="section__title">Testimonial</h2>
+      <div class="testimonial__container container swiper">
+        <div class="swiper-wrapper">
+          <div class="testimonial__card swiper-slide">
+            <img src="assets/img/testimonials/raizol.png" alt="" class="testimonial__img" />
+            <h3 class="testimonial__name">Raizol Sama</h3>
+            <p class="testimonial__description">Loved dealing with this guy. fast, cheap and reliable</p>
+          </div>
+          <div class="testimonial__card swiper-slide">
+            <img src="assets/img/testimonials/aditya.png" alt="" class="testimonial__img" />
+            <h3 class="testimonial__name">Aditya</h3>
+            <p class="testimonial__description">Working with Ayansh has always been great, I must recommend you to work with him.</p>
+          </div>
+          <div class="testimonial__card swiper-slide">
+            <img src="assets/img/testimonials/sendev.png" alt="" class="testimonial__img" />
+            <h3 class="testimonial__name">Sendev</h3>
+            <p class="testimonial__description">Good, cheap, and quality graphics definitely will buy from him again</p>
+          </div>
+          <div class="testimonial__card swiper-slide">
+            <img src="assets/img/testimonials/vilko.png" alt="" class="testimonial__img" />
+            <h3 class="testimonial__name">Will</h3>
+            <p class="testimonial__description">The graphics were great and the prices are unexpectedly low. Will buy again</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <span class="section__subtitle">Get in touch</span>
+      <h2 class="section__title">Contact Me</h2>
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <h3 class="contact__title">Talk to me</h3>
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="bx bx-mail-send contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">mail@ayansh.xyz</span>
+              <a href="mailto:mail@ayansh.xyz" target="_blank" class="contact__button">
+                write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="bx bxl-discord contact__card-icon"></i>
+              <h3 class="contact__card-title">Discord</h3>
+              <span class="contact__card-data">iconic_ayansh_0</span>
+              <a href="https://discord.com/users/1004291040150298715/" target="_blank" class="contact__button">
+                write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__content">
+        <h3 class="contact__title">Write me your thoughts</h3>
+        <form action="https://formspree.io/f/xldwrkdy" method="POST" class="contact__form">
+          <div class="contact__form-div">
+            <label for="name" class="contact__form-tag">Name</label>
+            <input type="text" name="name" placeholder="Your name or Discord username" required class="contact__form-input" />
+          </div>
+          <div class="contact__form-div">
+            <label for="email" class="contact__form-tag">Mail</label>
+            <input type="email" name="email" placeholder="Your email" required class="contact__form-input" />
+          </div>
+          <div class="contact__form-div contact__form-area">
+            <label for="message" class="contact__form-tag">Message</label>
+            <textarea name="message" placeholder="Your message" required class="contact__form-input"></textarea>
+          </div>
+          <button type="submit" class="button">Send Message</button>
+        </form>
+
+        <div class="popup" id="popup">
+          <p id="popupMessage"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer__love">
+      Made with <span style="color: #e25555;">&hearts;</span> by
+      <a href="https://discord.com/users/1004291040150298715" target="_blank">Iconic Ayansh</a>
+    </h2>
+  </footer>
+
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
