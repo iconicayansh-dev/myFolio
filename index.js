@@ -16,10 +16,9 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'index.html'));
 });
 
-app.get("/cdn", (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'cdn'));
+app.get("/cats-hub", (req, res) => {
+  res.redirect("https://discord.gg/cats-hub-gg-freetag-945227072492691537");
 });
-
 
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
