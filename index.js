@@ -13,16 +13,13 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+    res.sendFile(path.join(__dirname, 'pages', 'index.html'));
 });
 
-app.use((req, res, next) => {
-  if (req.hostname === 'cdn.ayansh.xyz') {
-    express.static(path.join(__dirname, 'public/assets/img'))(req, res, next);
-  } else {
-    next();
-  }
+app.get("/cdn", (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'cdn'));
 });
+
 
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
