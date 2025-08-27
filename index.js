@@ -16,6 +16,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+app.use((req, res, next) => {
+  if (req.hostname === 'cdn.ayansh.xyz') {
+    express.static(path.join(__dirname, 'public/cdn'))(req, res, next);
+  } else {
+    next();
+  }
+});
+
 app.listen(port, () => {
     console.log(`listening on port: ${port}`);
 });
