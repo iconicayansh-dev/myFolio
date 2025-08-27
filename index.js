@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.use((req, res, next) => {
   if (req.hostname === 'cdn.ayansh.xyz') {
-    express.static(path.join(__dirname, 'public/cdn'))(req, res, next);
+    express.static(path.join(__dirname, 'public/assets/img'))(req, res, next);
   } else {
     next();
   }
