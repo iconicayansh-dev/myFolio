@@ -3,18 +3,19 @@
 :root {
   --home-height: 100vh;
   --header-height: 3.5rem;
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
-  --second-hue: 219;
+  --first-hue: 270;
+--sat: 65%;
+--lig: 70%;
+--second-hue: 260;
+
+--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+--first-color-alt: hsl(var(--first-hue), var(--sat), 75%);
+--title-color: hsl(var(--second-hue), 20%, 95%);
+--text-color: hsl(var(--second-hue), 10%, 78%);
+--text-color-light: hsl(var(--second-hue), 6%, 60%);
+--body-color: hsl(var(--second-hue), 15%, 8%);
+--container-color: hsl(var(--second-hue), 25%, 15%);
   
-  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 78%); /* -4% */
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 0%, 0%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
 
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
