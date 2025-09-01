@@ -6,15 +6,15 @@
   --first-hue: 270;
 --sat: 65%;
 --lig: 70%;
---second-hue: 260;
+--second-hue: 282;
 
 --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
 --first-color-alt: hsl(var(--first-hue), var(--sat), 75%);
 --title-color: hsl(var(--second-hue), 20%, 95%);
 --text-color: hsl(var(--second-hue), 10%, 78%);
 --text-color-light: hsl(var(--second-hue), 6%, 60%);
---body-color: hsl(var(--second-hue), 15%, 8%);
---container-color: hsl(var(--second-hue), 25%, 15%);
+--body-color: hsl(var(--second-hue), 100%, 12%);
+--container-color: hsl(var(--second-hue), 12%, 15%);
   
 
   --body-font: 'Poppins', sans-serif;
