@@ -60,6 +60,7 @@ html {
 body,
 button,
 input,
+section,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
