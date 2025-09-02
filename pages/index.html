@@ -16,51 +16,46 @@
   
   <link rel="icon" type="image/png" href="assets/img/mainAvatar.png" />
   <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <title>Iconic Ayansh | Home</title>
+  <title>Iconic Ayansh | Portfolio</title>
 </head>
 <body>
-  
-  <header id="header" class="header transHead"> 
-    <nav class="nav container"> 
-  <a href="https://ayansh.xyz/" class="navLogo">Ayansh</a>
-<div class="navMenu"> <ul class="navList"> 
-<li class="navItem"> 
-  <a onclick="goTo('home'); return false;" href="/" class="navLink active-link">
-<i class="bx bx-home-alt">
-</i>
-  </a>
-</li>
-  <li class="navItem">
-    <a onclick="goTo('about'); return false;" href="/about" class="navLink">
-      <i class="bx bx-user">
-      </i>
-    </a>
-    </li>
-  <li class="navItem">
-    <a onclick="goTo('work'); return false;" href="/projects" class="navLink">
-      <i class="bx bx-briefcase-alt">
-      </i>
-    </a>
-  </li>
-  <li class="navItem">
-    <a onclick="goTo('contact'); return false;" href="/contact" class="navLink">
-      <i class="bx bx-message-square">
-      </i>
-    </a>
-  </li>
-</ul>
-</div>
-      <i id="theme-button" class="bx bx-moon change-theme">
-      </i>
+  <header id="header" class="header transHead">
+    <nav class="nav container">
+      <a href="https://ayansh.xyz/" class="navLogo">Ayansh</a>
+      <div class="navMenu">
+        <ul class="navList">
+          <li class="navItem">
+            <a onclick="goTo('home'); return false;" href="/" class="navLink active-link">
+              <i class="bx bx-home-alt"></i>
+            </a>
+          </li>
+          <li class="navItem">
+            <a onclick="goTo('about'); return false;" href="/about" class="navLink">
+              <i class="bx bx-user"></i>
+            </a>
+          </li>
+          <li class="navItem">
+            <a onclick="goTo('work'); return false;" href="/work" class="navLink">
+              <i class="bx bx-briefcase-alt"></i>
+            </a>
+          </li>
+          <li class="navItem">
+            <a onclick="goTo('contact'); return false;" href="/contact" class="navLink">
+              <i class="bx bx-message-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <i id="theme-button" class="bx bx-moon change-theme"></i>
     </nav>
   </header>
 
   <i class="bx bx-moon change-theme"></i>
-  <a href="#" class="nav__logo2">Ayansh</a>
-  
+  <a href="#" class="navLogo2">Ayansh</a>
+
   <main class="main">
     <section id="home" class="home">
       <div class="homeContainer container grid">
@@ -69,13 +64,19 @@
           <h1 class="homeName">Iconic Ayansh</h1>
           <h3 class="homePassion">Gamer / Developer</h3>
           <div class="homeButtons">
-            <a href="/about" class="button">About me</a>
+            <a onclick="goTo('/about');" class="button">About me</a>
           </div>
         </div>
         <div class="homeSocial">
-          <a href="https://youtube.com/@iconicayansh" target="_blank" class="homeSocial-link"><i class="bx bxl-youtube"></i></a>
-          <a href="https://www.instagram.com/iconic_ayansh" target="_blank" class="homeSocial-link"><i class="bx bxl-instagram"></i></a>
-          <a href="https://discord.com/users/1004291040150298715" target="_blank" class="homeSocial-link"><i class="bx bxl-discord-alt"></i></a>
+          <a href="https://youtube.com/@iconicayansh" target="_blank" class="homeSocial-link">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/iconic_ayansh" target="_blank" class="homeSocial-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://discord.com/users/1004291040150298715" target="_blank" class="homeSocial-link">
+            <i class="bx bxl-discord-alt"></i>
+          </a>
         </div>
       </div>
     </section>
